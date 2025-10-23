@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YCKY3CZSL7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YCKY3CZSL7');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tatvam Body Massage Services for Women</title>
+    <!-- Google tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YCKY3CZSL7');
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <style>
         * {
@@ -31,6 +30,12 @@
             color: white;
             text-align: center;
             padding: 60px 20px;
+            cursor: pointer; /* Indicates clickable */
+        }
+        header a {
+            text-decoration: none; /* Removes underline from link */
+            color: inherit; /* Keeps text white */
+            display: block; /* Makes entire header area clickable */
         }
         header h1 {
             font-family: 'Playfair Display', serif;
@@ -85,6 +90,16 @@
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             text-align: center;
+        }
+        #services li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        #services li a:hover {
+            color: #cc0066; /* Pink hover effect */
         }
         #gallery {
             text-align: center;
@@ -153,9 +168,11 @@
 </head>
 <body>
     <header>
-        <h1>Tatvam Body Massage Services for Women</h1>
-        <p>A Serene Escape for Women</p>
-        <p>Available 24/7, No Holidays</p>
+        <a href="#top">
+            <h1 id="top">Tatvam Body Massage Services for Women</h1>
+            <p>A Serene Escape for Women</p>
+            <p>Available 24/7, No Holidays</p>
+        </a>
     </header>
 
     <nav>
@@ -174,26 +191,26 @@
     <section id="services">
         <h2>Our Services</h2>
         <ul>
-            <li>Full Body Massage Service</li>
-            <li>Milky Massage Service</li>
-            <li>Chocolate Massage Service</li>
-            <li>Dairy Milk Silk Massage Service</li>
-            <li>Massage Home Services for Women</li>
-            <li>Hotel Massage Services for Women</li>
-            <li>Nuru Massage Services</li>
-            <li>Body to Body Massage Services</li>
-            <li>Night Stay Massage Services</li>
-            <li>Travelling Massage Services</li>
-            <li>Fantasy Massage Services</li>
-            <li>Male to Female Massage Services</li>
+            <li><a href="#contact">Full Body Massage Service</a></li>
+            <li><a href="#contact">Milky Massage Service</a></li>
+            <li><a href="#contact">Chocolate Massage Service</a></li>
+            <li><a href="#contact">Dairy Milk Silk Massage Service</a></li>
+            <li><a href="#contact">Massage Home Services for Women</a></li>
+            <li><a href="#contact">Hotel Massage Services for Women</a></li>
+            <li><a href="#contact">Nuru Massage Services</a></li>
+            <li><a href="#contact">Body to Body Massage Services</a></li>
+            <li><a href="#contact">Night Stay Massage Services</a></li>
+            <li><a href="#contact">Travelling Massage Services</a></li>
+            <li><a href="#contact">Fantasy Massage Services</a></li>
+            <li><a href="#contact">Male to Female Massage Services</a></li>
         </ul>
     </section>
 
     <section id="gallery">
         <h2>Our Ambiance</h2>
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Spa ambiance">
-        <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9" alt="Massage setting">
-        <img src="https://images.unsplash.com/photo-1570172619644-d4f5fc6ef552" alt="Relaxation room">
+        <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?w=500&h=300&fit=crop" alt="Male masseur giving relaxing back massage to female client in Ahmedabad spa">
+        <img src="https://images.unsplash.com/photo-1600334085066-01535b6c34e7?w=500&h=300&fit=crop" alt="Skilled male therapist massaging shoulders of relaxed female client in Mumbai">
+        <img src="https://images.unsplash.com/photo-1519823558689-c3cfce3f3dd3?w=500&h=300&fit=crop" alt="Professional male masseur providing therapeutic full-body massage to female client in Delhi">
     </section>
 
     <section id="locations">
@@ -214,23 +231,24 @@
     <section id="contact">
         <h2>Book Your Appointment</h2>
         <p>Available 24/7 – Contact us to schedule your serene escape!</p>
+        <p><em>If your email client doesn't open, please email your booking details directly to tatvammassage@gmail.com.</em></p>
         <form action="mailto:tatvammassage@gmail.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
             <label for="firstName">First Name *</label>
-            <input type="text" id="firstName" name="firstName" required>
+            <input type="text" id="firstName" name="First Name" required>
             
             <label for="lastName">Last Name *</label>
-            <input type="text" id="lastName" name="lastName" required>
+            <input type="text" id="lastName" name="Last Name" required>
             
             <label for="emailPhone">Email or Phone *</label>
-            <input type="text" id="emailPhone" name="emailPhone" required>
+            <input type="text" id="emailPhone" name="Email or Phone" required>
             
-            <label for="message">Message *</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Message (e.g., Preferred Service, Date, Location) *</label>
+            <textarea id="message" name="Message" rows="5" required></textarea>
             
             <input type="submit" value="Submit Booking Request">
         </form>
         <div id="disclaimer">
-            <p><strong>Disclaimer:</strong> Tatvam Body Massage Services for Women is exclusively for female clients. All services, including Male to Female Massage Services, are provided by trained professionals in a safe, respectful, and non-medical environment. Our services are intended for relaxation and wellness purposes only and do not constitute medical treatment. By booking, you confirm you are a female client and agree to our professional standards.</p>
+            <p><strong>Disclaimer:</strong> Tatvam Body Massage Services for Women is exclusively for female clients. All services, including Male to Female Massage Services, are provided by trained professionals in a safe, respectful, and non-medical environment. Our services are intended for relaxation and wellness purposes only and do not constitute medical treatment. By booking, you confirm you are a female client and agree to our professional standards. We use Google Analytics to anonymously track site usage to improve our services; no personal data is shared.</p>
         </div>
     </section>
 
@@ -253,5 +271,4 @@
         }
     </script>
 </body>
-
 </html>
