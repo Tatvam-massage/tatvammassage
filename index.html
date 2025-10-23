@@ -14,10 +14,8 @@
       gtag('config', 'G-G-YCKY3CZSL7');
     </script>
     
-    <!-- NEW FIX: Removed all emojis and introduced Font Awesome icons for guaranteed rendering stability. -->
+    <!-- FIX: Removing external Font Awesome link to ensure stable loading. Reverting to stable Emojis. -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6.5.2 CDN link added to use robust icons instead of native emojis -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJzLQQ6uA8oQ/9YyW6UvR0P7R3t4FvM7fXp6Dk2FvU0i2A1b2Fw5U5y5u5y5u5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             margin: 0;
@@ -134,17 +132,15 @@
             color: #cc0066;
         }
         
-        /* FONT AWESOME STYLING FOR SERVICES - Using <i> tags */
+        /* EMOJI STYLING FOR SERVICES (Reverting to Emojis) */
         .service-name {
             display: block;
             font-size: 1.1em;
         }
         .service-icon {
-            /* Now using Font Awesome classes, we just ensure size and color */
-            font-size: 1.8em; 
+            font-size: 1.5em; /* Adjusted size for emojis */
             display: block;
             margin-bottom: 5px;
-            color: #ff66b2; /* Giving the icons a matching pink color */
         }
 
         #locations ul {
@@ -268,64 +264,64 @@
     <section id="services">
         <h2>Our Exclusive M2F Massage Services</h2>
         <ul>
-            <!-- Full Body Massage (Lotion Bottle) replaced with Font Awesome -->
+            <!-- Full Body Massage (Lotion Bottle 🧴) -->
             <li><a href="#contact">
-                <i class="service-icon fa-solid fa-hand-holding-droplet"></i>
+                <span class="service-icon">🧴</span>
                 <span class="service-name">Full Body Massage Service</span>
             </a></li>
-            <!-- Milky Massage (Milk Bottle) replaced with Font Awesome -->
+            <!-- Milky Massage (Baby Bottle 🍼) -->
             <li><a href="#contact">
-                <i class="service-icon fa-solid fa-glass-water"></i>
+                <span class="service-icon">🍼</span>
                 <span class="service-name">Milky Massage Service</span>
             </a></li>
-            <!-- Chocolate Massage (Honey Pot) replaced with Font Awesome -->
+            <!-- Chocolate Massage (Honey Pot 🍯) -->
             <li><a href="#contact">
-                <i class="service-icon fa-solid fa-jar"></i>
+                <span class="service-icon">🍯</span>
                 <span class="service-name">Chocolate Massage Service</span>
             </a></li> 
-            <!-- Dairy Milk Silk Massage (Chocolate Bar) replaced with Font Awesome -->
+            <!-- Dairy Milk Silk Massage (Chocolate Bar 🍫) -->
             <li><a href="#contact">
-                <i class="service-icon fa-solid fa-candy-bar"></i>
+                <span class="service-icon">🍫</span>
                 <span class="service-name">Dairy Milk Silk Massage Service</span>
             </a></li> 
-            <!-- Home Services (House) replaced with Font Awesome -->
+            <!-- Home Services (House 🏡) -->
             <li><a href="#contact">
-                <i class="service-icon fa-solid fa-house"></i>
+                <span class="service-icon">🏡</span>
                 <span class="service-name">Massage Home Services for Women</span>
             </a></li>
-            <!-- Hotel Services (Hotel) replaced with Font Awesome -->
+            <!-- Hotel Services (Hotel 🏨) -->
             <li><a href="#contact">
-                <i class="service-icon fa-solid fa-hotel"></i>
+                <span class="service-icon">🏨</span>
                 <span class="service-name">Hotel Massage Services for Women</span>
             </a></li>
-            <!-- Nuru Massage (Shower) replaced with Font Awesome -->
+            <!-- Nuru Massage (Shower 🚿) -->
             <li><a href="#contact">
-                <i class="service-icon fa-solid fa-shower"></i>
+                <span class="service-icon">🚿</span>
                 <span class="service-name">Nuru Massage Services</span>
             </a></li> 
-            <!-- Body to Body Massage (Kiss Mark) replaced with Font Awesome -->
+            <!-- Body to Body Massage (Kiss Mark 💋) -->
             <li><a href="#contact">
-                <i class="service-icon fa-solid fa-lips"></i>
+                <span class="service-icon">💋</span>
                 <span class="service-name">Body to Body Massage Services</span>
             </a></li>
-            <!-- Night Stay (Crescent Moon) replaced with Font Awesome -->
+            <!-- Night Stay (Crescent Moon 🌙) -->
             <li><a href="#contact">
-                <i class="service-icon fa-solid fa-moon"></i>
+                <span class="service-icon">🌙</span>
                 <span class="service-name">Night Stay Massage Services</span>
             </a></li>
-            <!-- Travelling (Airplane) replaced with Font Awesome -->
+            <!-- Travelling (Airplane ✈️) -->
             <li><a href="#contact">
-                <i class="service-icon fa-solid fa-plane"></i>
+                <span class="service-icon">✈️</span>
                 <span class="service-name">Travelling Massage Services</span>
             </a></li>
-            <!-- Fantasy (Sparkles) replaced with Font Awesome -->
+            <!-- Fantasy (Sparkles ✨) -->
             <li><a href="#contact">
-                <i class="service-icon fa-solid fa-wand-magic-sparkles"></i>
+                <span class="service-icon">✨</span>
                 <span class="service-name">Fantasy Massage Services</span>
             </a></li>
-            <!-- M2F (Red Heart) replaced with Font Awesome -->
+            <!-- M2F (Red Heart ❤️) -->
             <li><a href="#contact">
-                <i class="service-icon fa-solid fa-heart"></i>
+                <span class="service-icon">❤️</span>
                 <span class="service-name">Male to Female Massage Services</span>
             </a></li>
         </ul>
