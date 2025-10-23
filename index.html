@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tatvam Body Massage Services for Women</title>
+    <!-- Google tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YCKY3CZSL7"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -100,10 +101,6 @@
         #services li a:hover {
             color: #cc0066; /* Pink hover effect */
         }
-        /* The following #gallery styles have been removed:
-        #gallery { text-align: center; }
-        #gallery img { width: 100%; max-width: 300px; margin: 10px; border-radius: 10px; }
-        */
         #locations ul {
             list-style: none;
             text-align: center;
@@ -178,7 +175,7 @@
 
     <section id="about">
         <h2>About Us</h2>
-        <p>At Tatvam Body Massage Services for Women, we are dedicated to providing a serene and empowering wellness experience exclusively for women. Our specialized services, including our signature Male to Female Massage Services, are thoughtfully designed to offer relaxation, comfort, and rejuvenation, delivered by skilled male therapists in a safe and professional environment. With a presence in Ahmedabad, Gandhinagar, Pune, Mumbai, Lonavala, Navi Mumbai, Delhi, Bangalore, and Kolkata, we bring our unique blend of personalized care and therapeutic expertise to women across India. Our mission is to create a tranquil escape where every woman feels valued, relaxed, and revitalized, 24/7, with no holidays.</p>
+        <p>At Tatvam Body Massage Services for Women, we are dedicated to providing a serene and empowering wellness experience exclusively for women. Our specialized services, including our signature <strong>Male to Female Massage Services</strong>, are thoughtfully designed to offer relaxation, comfort, and rejuvenation, delivered by skilled male therapists in a safe and professional environment. With a presence in Ahmedabad, Gandhinagar, Pune, Mumbai, Lonavala, Navi Mumbai, Delhi, Bangalore, and Kolkata, we bring our unique blend of personalized care and therapeutic expertise to women across India. Our mission is to create a tranquil escape where every woman feels valued, relaxed, and revitalized, 24/7, with no holidays.</p>
     </section>
 
     <section id="services">
@@ -234,7 +231,7 @@
             <input type="submit" value="Submit Booking Request">
         </form>
         <div id="disclaimer">
-            <p><strong>Disclaimer:</strong> Tatvam Body Massage Services for Women is exclusively for female clients. All services, including Male to Female Massage Services, are provided by trained professionals in a safe, respectful, and non-medical environment. Our services are intended for relaxation and wellness purposes only and do not constitute medical treatment. By booking, you confirm you are a female client and agree to our professional standards. We use Google Analytics to anonymously track site usage to improve our services; no personal data is shared.</p>
+            <p><strong>Disclaimer:</strong> Tatvam Body Massage Services for Women is exclusively for female clients. All services, including <strong>Male to Female Massage Services</strong>, are provided by trained professionals in a safe, respectful, and non-medical environment. Our services are intended for relaxation and wellness purposes only and do not constitute medical treatment. By booking, you confirm you are a female client and agree to our professional standards. We use Google Analytics to anonymously track site usage to improve our services; no personal data is shared.</p>
         </div>
     </section>
 
@@ -243,6 +240,8 @@
     </footer>
 
     <script>
+        // NOTE: Standard `alert()` and `confirm()` functions are disabled in this environment.
+        // A custom modal dialog would be needed for production use.
         function validateForm() {
             let firstName = document.getElementById('firstName').value;
             let lastName = document.getElementById('lastName').value;
@@ -250,8 +249,9 @@
             let message = document.getElementById('message').value;
             
             if (!firstName || !lastName || !emailPhone || !message) {
-                alert('Please fill out all required fields.');
-                return false;
+                console.error('Please fill out all required fields.');
+                // Return false to prevent form submission in this case
+                return false; 
             }
             return true;
         }
