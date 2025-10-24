@@ -17,7 +17,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     
     <style>
         * {
@@ -65,6 +65,11 @@
         }
         #trust-signals p {
             margin: 5px 0;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
         }
 
         nav {
@@ -162,18 +167,27 @@
         }
         #contact p.highlight {
             text-align: center;
-            background-color: #fff0f5;
-            color: #cc0066;
+            background: linear-gradient(to right, #ff80a0, #ff4d88);
+            color: white;
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.2em;
             font-weight: bold;
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #ff3399;
             border-radius: 5px;
             margin-bottom: 20px;
             animation: blink 1.5s ease-in-out infinite;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        #contact p.highlight::before {
+            content: '⏰ ';
+            font-size: 1.2em;
+            margin-right: 5px;
         }
         @keyframes blink {
             0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+            50% { opacity: 0.6; }
         }
         #contact form {
             max-width: 600px;
@@ -335,6 +349,21 @@
                 <span class="service-icon" aria-hidden="true">❤️</span>
                 <span class="service-name">Male to Female Massage Services</span>
             </a></li>
+        </ul>
+    </section>
+
+    <section id="locations">
+        <h2>Our Service Areas: Ahmedabad, Pune, Mumbai, and more</h2>
+        <ul>
+            <li><strong>Main:</strong> Ahmedabad, Gujarat</li>
+            <li><strong>Main:</strong> Gandhinagar, Gujarat</li>
+            <li>Pune, Maharashtra</li>
+            <li>Mumbai, Maharashtra</li>
+            <li>Lonavala, Maharashtra</li>
+            <li>Navi Mumbai, Maharashtra</li>
+            <li>Delhi</li>
+            <li>Bangalore, Karnataka</li>
+            <li>Kolkata, West Bengal</li>
         </ul>
     </section>
 
