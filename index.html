@@ -35,7 +35,7 @@
         
         header {
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870') no-repeat center center/cover;
-            color: #FFD700; /* Soft gold for header text */
+            color: #FFD700; /* Soft gold */
             text-align: center;
             padding: 80px 20px;
             min-height: 300px;
@@ -58,17 +58,37 @@
         }
         
         #trust-signals {
-            background-color: #fff0f5;
+            background: #333; /* Dark background like #contact p.highlight */
+            background-image: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10%);
+            background-size: 10px 10px;
             text-align: center;
             padding: 15px 20px;
-            border-bottom: 2px solid #ff99cc;
-            font-weight: 700;
-            color: #cc0066;
-            font-size: 1.1em;
+            border: 2px double #ff99cc; /* Pink double border */
+            color: #FFD700; /* Soft gold text */
+            position: relative; /* For pseudo-elements */
         }
         #trust-signals p {
             margin: 5px 0;
             animation: pulse 2s ease-in-out infinite;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* For readability */
+            position: relative;
+            padding: 0 40px; /* Space for sparkles */
+            font-size: 1.1em;
+            font-weight: 700;
+        }
+        #trust-signals p::before, #trust-signals p::after {
+            content: '✨'; /* Sparkle emojis */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2em;
+            color: #FFD700; /* Match text color */
+        }
+        #trust-signals p::before {
+            left: 10px; /* Left side */
+        }
+        #trust-signals p::after {
+            right: 10px; /* Right side */
         }
         @keyframes pulse {
             0%, 100% { transform: scale(1); }
@@ -268,6 +288,9 @@
                 font-size: 1em;
             }
             #services ul { grid-template-columns: 1fr; }
+            #trust-signals p::before, #trust-signals p::after {
+                font-size: 1em; /* Smaller sparkles on mobile */
+            }
         }
     </style>
 </head>
@@ -372,6 +395,7 @@
         <p>Please use the simple form below to submit your booking request. We will confirm your appointment via email as quickly as possible.</p>
         <p class="italic">For the fastest response, ensure your <strong>Email or Phone</strong> is accurate. If you encounter issues, please email your booking details directly to tatvammassage@gmail.com.</p>
         <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="firstName">Name *</label>
             <label for="firstName">Name *</label>
             <input type="text" id="firstName" name="name" aria-required="true" required>
             <label for="emailPhone">Email or Phone *</label>
