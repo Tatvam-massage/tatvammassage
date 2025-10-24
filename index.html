@@ -112,3 +112,120 @@
             background: white;
             padding: 15px;
             border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        #services li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        #services li a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-weight: bold; /* Make service names stand out */
+        }
+        #services li a:hover {
+            color: #cc0066;
+        }
+        
+        /* EMOJI STYLING FOR SERVICES (Reverting to Emojis) */
+        .service-name {
+            display: block;
+            font-size: 1.1em;
+        }
+        .service-icon {
+            font-size: 1.5em; /* Adjusted size for emojis */
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #locations ul {
+            list-style: none;
+            text-align: center;
+        }
+        #locations li {
+            display: inline-block;
+            margin: 10px 20px;
+            font-weight: bold;
+        }
+        
+        /* Styles for the email form (Simplified) */
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        #contact label {
+            font-weight: bold;
+        }
+        #contact input, #contact textarea {
+            padding: 10px;
+            /* UPDATED: Form border color changed to navigation bar color */
+            border: 1px solid #ff3399; 
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        #contact input[type="submit"] {
+            /* UPDATED: CTA button color matching navigation bar */
+            background-color: #ff3399;
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            /* New CTA Text Size */
+            font-size: 1.2em; 
+        }
+        #contact input[type="submit"]:hover {
+            background-color: #ff66b2; /* Lighter shade on hover */
+        }
+
+
+        #disclaimer {
+            font-size: 0.9em;
+            text-align: center;
+            color: #555;
+            margin-top: 20px;
+        }
+        footer {
+            /* UPDATED: Footer color matching navigation bar */
+            background-color: #ff3399;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* STICKY MOBILE CTA BAR */
+        #mobile-cta-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            /* UPDATED: Mobile bar color matching navigation bar */
+            background-color: #ff3399; 
+            padding: 8px 10px;
+            z-index: 1000;
+            display: none; /* Hidden by default */
+        }
+        #mobile-cta-bar a {
+            text-decoration: none;
+            color: white;
+            /* UPDATED: CTA button inside mobile bar color */
+            background-color: #ff66b2; /* Bright Pink */
+            padding: 12px 0;
+            border-radius: 5px;
+            font-weight: 700;
+            display: block;
+            text-align: center;
+            font-size: 1.2em;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            /* Padding added to body to accommodate the sticky footer */
+            body { padding-bottom: 70px; }
